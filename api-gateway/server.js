@@ -12,7 +12,7 @@ app.use("/auth", createProxyMiddleware({
 }));
 
 app.use("/products", createProxyMiddleware({
-  target: "http://product-service:5002",
+  target: "http://productservice:5002",
   changeOrigin: true
 }));
 
